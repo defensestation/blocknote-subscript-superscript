@@ -8,7 +8,7 @@ pasted into the editor.
 ## Install
 
 ```sh
-npm install blocknote-subscript-superscript
+npm install @defensestation/blocknote-subscript-superscript
 ```
 
 ## Use
@@ -31,7 +31,7 @@ import {
   SuperscriptButton,
   createSubscriptSuperscriptShortcuts,
   subscriptSuperscriptStyleSpecs,
-} from "blocknote-subscript-superscript";
+} from "@defensestation/blocknote-subscript-superscript";
 
 const schema = BlockNoteSchema.create({
   styleSpecs: {
@@ -81,7 +81,8 @@ Windows/Linux. The example above uses `Mod-Alt-,` and `Mod-Alt-.` to avoid the
 common macOS `⌘,` settings shortcut.
 
 The `subscriptSuperscriptShortcuts` export uses those macOS-safe defaults when
-you do not need custom bindings. Disable either binding with `false`:
+you do not need custom bindings: `Mod-Alt-,` for subscript and `Mod-Alt-.` for
+superscript. Disable either binding with `false`:
 
 ```ts
 createSubscriptSuperscriptShortcuts({
@@ -89,6 +90,16 @@ createSubscriptSuperscriptShortcuts({
   superscript: "Mod-Alt-.",
 });
 ```
+
+## Publishing
+
+Pushes to `main` publish the version in `package.json` with npm's `latest`
+tag. Bump that version before a release; the workflow skips versions that are
+already published. Pushes to `dev` publish an isolated prerelease such as
+`0.1.0-dev.42` under npm's `dev` tag.
+
+Configure npm trusted publishing for this GitHub repository, or add an
+`NPM_TOKEN` repository secret with permission to publish this package.
 
 ## Local Vite development
 

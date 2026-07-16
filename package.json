@@ -1,5 +1,5 @@
 {
-  "name": "blocknote-subscript-superscript",
+  "name": "@defensestation/blocknote-subscript-superscript",
   "version": "0.1.0",
   "description": "Subscript and superscript styles plus React toolbar buttons for BlockNote.",
   "license": "MIT",

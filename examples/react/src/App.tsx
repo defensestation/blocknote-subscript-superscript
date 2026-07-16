@@ -11,7 +11,7 @@ import {
   SuperscriptButton,
   createSubscriptSuperscriptShortcuts,
   subscriptSuperscriptStyleSpecs,
-} from "blocknote-subscript-superscript";
+} from "@defensestation/blocknote-subscript-superscript";
 
 const schema = BlockNoteSchema.create({
   styleSpecs: {
