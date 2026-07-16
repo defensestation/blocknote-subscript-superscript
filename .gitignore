@@ -1,0 +1,6 @@
+node_modules/
+examples/react/node_modules/
+dist/
+examples/react/dist/
+*.tgz
+.DS_Store

@@ -1,0 +1,49 @@
+:root {
+  color: #20222b;
+  background: #f5f6fb;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: min(760px, calc(100% - 32px));
+  margin: 64px auto;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #635bff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+header > p:last-child {
+  color: #5c6070;
+}
+
+.editor-card {
+  min-height: 300px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e4e6ef;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgb(31 35 55 / 8%);
+}

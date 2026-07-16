@@ -1,0 +1,35 @@
+{
+  "name": "blocknote-subscript-superscript",
+  "version": "0.1.0",
+  "description": "Subscript and superscript styles plus React toolbar buttons for BlockNote.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "@blocknote/core": ">=0.51.0 <1.0.0",
+    "@blocknote/react": ">=0.51.0 <1.0.0",
+    "react": ">=18.0.0 <20.0.0"
+  },
+  "devDependencies": {
+    "@blocknote/core": "^0.51.4",
+    "@blocknote/react": "^0.51.4",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit"
+  }
+}

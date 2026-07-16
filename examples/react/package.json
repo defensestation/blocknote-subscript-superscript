@@ -1,0 +1,28 @@
+{
+  "name": "blocknote-subscript-superscript-react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm run typecheck && vite build",
+    "dev": "vite",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@blocknote/core": "^0.51.4",
+    "@blocknote/mantine": "^0.51.4",
+    "@blocknote/react": "^0.51.4",
+    "@mantine/core": "^8.3.14",
+    "@mantine/hooks": "^8.3.14",
+    "blocknote-subscript-superscript": "file:../..",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.7.2",
+    "vite": "^7.1.7"
+  }
+}
