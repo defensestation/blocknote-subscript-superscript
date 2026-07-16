@@ -5,6 +5,9 @@ styles, along with formatting-toolbar buttons. It exports styled content as
 native `<sub>` and `<sup>` elements and recognises those elements when HTML is
 pasted into the editor.
 
+## Example
+![Example Image](./img/example.png)
+
 ## Install
 
 ```sh
